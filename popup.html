@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="popup.css">
+    <title>Instagram Comment Cleaner</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Comment Cleaner</h1>
+        <span id="state" class="state">stopped</span>
+      </header>
+
+      <label>
+        Comments per batch
+        <input id="batchSize" type="number" min="1" max="20" step="1" value="12">
+      </label>
+
+      <label>
+        Interval between batches (seconds)
+        <input id="delaySeconds" type="number" min="4" max="600" step="1" value="10">
+        <span class="hint">Use longer intervals to reduce the risk of having your Instagram account restricted.</span>
+      </label>
+
+      <div id="countdown" class="countdown hidden">
+        Next batch in <strong id="countdownValue">--</strong>s
+      </div>
+
+      <div class="actions">
+        <button id="start" type="button">Start</button>
+        <button id="stop" type="button">Stop</button>
+      </div>
+
+      <p id="status">Open the Instagram comments page to start.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
