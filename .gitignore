@@ -15,15 +15,6 @@ $RECYCLE.BIN/
 *.sublime-project
 *.sublime-workspace
 
-# Python (used by generate_icons.py)
-__pycache__/
-*.py[cod]
-*.pyo
-*.egg-info/
-.Python
-build/
-dist/
-
 # Logs
 *.log
 
