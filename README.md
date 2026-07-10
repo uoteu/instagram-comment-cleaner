@@ -1,4 +1,4 @@
-# Instagram Comment Cleaner
+# Instagram Comment Deleter: delete all your comments made
 
 Local Chrome extension that deletes Instagram comments in configurable batches.
 

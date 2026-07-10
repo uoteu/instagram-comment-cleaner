@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Instagram Comment Cleaner",
+  "name": "Instagram Comment Deleter: delete all your comments made",
   "version": "1.0.0",
-  "description": "Remove comentarios do Instagram em lotes configuraveis.",
+  "description": "Batch-delete all your Instagram comments directly from your browser. Works with Portuguese and English Instagram UI, with a live countdown timer and configurable batch size.",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
@@ -17,7 +17,7 @@
     "https://www.instagram.com/*"
   ],
   "action": {
-    "default_title": "Instagram Comment Cleaner",
+    "default_title": "Instagram Comment Deleter: delete all your comments made",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icon16.png",

@@ -1,6 +1,6 @@
 (() => {
-  if (window.__instagramCommentCleanerLoaded) return;
-  window.__instagramCommentCleanerLoaded = true;
+  if (window.__instagramCommentDeleterLoaded) return;
+  window.__instagramCommentDeleterLoaded = true;
 
   const DEFAULTS = {
     batchSize: 12,
