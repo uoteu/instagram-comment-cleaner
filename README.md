@@ -22,13 +22,28 @@ Local Chrome extension that deletes Instagram comments in configurable batches.
 2. Log in if needed.
 3. Click the extension icon to open the popup.
 4. Adjust:
-   - **Comments per batch** (default `12`);
-   - **Interval between batches** in seconds (default `10`).
+   - **Comments per batch** (default `8`);
+   - **Interval between batches** in seconds (default `3`).
 5. Click "Start".
 
 While the extension is running, the popup shows a live countdown to the next batch.
 
-Use a larger interval if Instagram starts throttling the page or showing errors.
+## Tuning for stability
+
+The defaults are intentionally conservative, but Instagram can still throttle the page or return errors when you delete a lot of comments in a short time. If that happens:
+
+- **First**, reduce **Comments per batch** — this is the setting that affects the page the most. Each batch does a full select-all → delete → confirm cycle on the page, so smaller batches are more reliable.
+- **Then**, if you still see errors, **increase** **Interval between batches** to give Instagram more breathing room (and reduce the risk of temporary account restrictions).
+
+Anecdotal reference values that have worked for the project author:
+
+| Comments per batch | Interval (s) | Notes |
+| --- | --- | --- |
+| `12` | `3` | ❌ Unstable — sometimes fails to select / confirm |
+| `8`  | `3` | ✅ Default — works most of the time |
+| `4`  | `3` | ✅ Safest — what the author currently uses |
+
+Start with the defaults, and only push batch size up if your account tolerates it.
 
 ## Adding more languages
 

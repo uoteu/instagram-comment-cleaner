@@ -3,8 +3,8 @@
   window.__instagramCommentDeleterLoaded = true;
 
   const DEFAULTS = {
-    batchSize: 12,
-    delaySeconds: 10,
+    batchSize: 8,
+    delaySeconds: 3,
     running: false
   };
 
